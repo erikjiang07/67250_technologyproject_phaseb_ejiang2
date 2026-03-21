@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <meta name="author" content="Erik Jiang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>Checkout</title>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <img id="logo" src="../static/images/monomuselogo.png" alt="MonoMuse Museum Logo">
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a id="navselected" href="checkout.html">Checkout</a>
+    </nav>
+    <form>
+        <label>Name: (required)</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email: (required)</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Ticket Quantity: (required)</label><br>
+        <input type="number" name="quantity" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p id ="copyYear"></p>
+    </footer>
+</body>
+</html>
+ 
