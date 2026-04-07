@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Erik Jiang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="../static/script.js" defer></script>
+    <title>Buy Tickets</title>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/images/monomuselogo.png" alt="MonoMuse Museum Logo">
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Buy Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <main class="main">
+             <h2>Ticket Prices</h2>
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>General Admission</td>
+                    <td>Access to all exhibitions and installations</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Student Admission</td>
+                    <td>Discounted ticket for students with valid ID</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Member Admission</td>
+                    <td>Unlimited access for one year, plus exclusive benefits.</td>
+                    <td>$50</td>
+                </tr>
+            </table>
+            <h2>Available Dates</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>April 5, 2026</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                    <td><button onclick="showForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 12, 2026</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                    <td><button onclick="showForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 19, 2026</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                    <td><button onclick="showForm()">Buy Now</button></td>
+                </tr>
+                <tr>
+                    <td>April 26, 2026</td>
+                    <td>10:00 AM - 5:00 PM</td>
+                    <td><button onclick="showForm()">Buy Now</button></td>
+                </tr>
+            </table>
+             <div id="purchaseForm" style="display:none;">
+                <h2>Purchase Tickets</h2>
+                <label>Name:</label><br>
+                <input type="text" name="name" required><br><br>
+                <label>Email:</label><br>
+                <input type="email" name="email" required><br><br>
+                <label>Number of Tickets:</label><br>
+                <input type="number" name="quantity" required><br><br>
+                <label>Selected Date:</label><br>
+                <input type="text" name="date" required><br><br>
+                <button onclick="submitForm()">Submit</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
