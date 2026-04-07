@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erik Jiang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <!-- jQuery library from jquery.com -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>  
+    <!-- Google Fonts used: Cormorant Garamond and Inter (fonts.google.com) -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        
+        <header class="header">
+            <a href="index.html">
+                <div id="logo">
+                    <span class="logo-title">MONOMUSE</span>
+                    <br>
+                    <span class="logo-subtitle">Museum of Fashion & Technology</span>
+                </div>
+            </a>
+        </header>
+        
+        <nav class="nav_bar">
+            <span id="hamburger" onclick="toggleNav()">&#9776;</span>
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a  class="buy-button"  href="views/buytickets.html">Buy Tickets</a>
+        </nav>
+        
+        <div class="hero">
+            <h1 id="greeting">Welcome to MonoMuse</h1>
+            <p>Explore the future of clothing, wearable tech, and textile innovation.</p>
+            <a  class="buy-button"  href="views/buytickets.html">Plan Your Visit</a>
+        </div>
+        
+        <main class="main">
+            <p id="shortIntro">
+                MonoMuse is a contemporary museum in Pittsburgh exploring the intersection of fashion, wearable technology, and textile innovation.
+            </p>
+            <p id="longIntro" style="display:none;">
+                From smart fabrics and 3D-printed garments to AI-generated design and digital fashion, MonoMuse showcases how technology is transforming the way we dress, create, and express ourselves. Whether you are a first-time visitor or a returning member, our exhibitions offer new perspectives on the future of fashion. Plan your visit to experience immersive installations, hands-on workshops, and collections designed to inspire creativity at the edge of fashion and technology.
+            </p>
+            <span id="readMore" tabindex="0">Read More</span>
+            <span id="readLess" style="display:none;" tabindex="0">Read Less</span>
+        </main>
+        
+        <footer class="footer">
+            <p id ="copyYear"></p>
+        </footer>
+    
+    </div>
+</body>
+</html>
