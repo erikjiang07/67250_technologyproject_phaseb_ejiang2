@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erik Jiang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>Buy Tickets</title>
+    <!-- jQuery library from jquery.com -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <!-- Google Fonts used: Cormorant Garamond and Inter (fonts.google.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        
+        <header class="header">
+            <a href="../index.html">
+                <div id="logo">
+                    <span class="logo-title">MONOMUSE</span>
+                    <br>
+                    <span class="logo-subtitle">Museum of Fashion & Technology</span>
+                </div>
+            </a>
+        </header>
+        
+        <nav class="nav_bar">
+            <span id="hamburger" onclick="toggleNav()">&#9776;</span>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a  class="buy-button"  href="buytickets.html">Buy Tickets</a>
+        </nav>
+        
+        <main class="main">
+            <h2>Ticket Pricing</h2>
+            <p>All tickets are $18 per person. Select your ticket type at checkout for entry tracking.</p>
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>General</td>
+                    <td>Access to all exhibitions and installations</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>Valid student ID required at entry</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>Exclusive member benefits and priority access</td>
+                    <td>$18</td>
+                </tr>
+            </table>
+            <h2>Membership</h2>
+            <p>
+                Become a MonoMuse member and support the future of fashion education and emerging designers. Members receive unlimited free admission, early access to exhibitions, and invitations to exclusive events. Annual membership starts at $120.
+            </p>
+            <br>
+            <a  class="buy-button"  href="checkout.html">Get Tickets</a>
+        </main>
+        
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Erik Jiang">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>Explore</title>
+    <!-- jQuery library from jquery.com -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <!-- Google Fonts used: Cormorant Garamond and Inter (fonts.google.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Leaflet.js map library from leafletjs.com -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+
+        <header class="header">
+            <a href="../index.html">
+                <div id="logo">
+                    <span class="logo-title">MONOMUSE</span>
+                    <br>
+                    <span class="logo-subtitle">Museum of Fashion & Technology</span>
+                </div>
+            </a>
+        </header>
+
+        <nav class="nav_bar">
+            <span id="hamburger" onclick="toggleNav()">&#9776;</span>
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a  class="buy-button"  href="buytickets.html">Buy Tickets</a>
+        </nav>
+
+        <main class="main">
+            <h2>Mission Statement</h2>
+            <p>
+                MonoMuse is dedicated to exploring the evolving relationship between fashion and technology. We showcase innovative works that challenge traditional boundaries in textile design, wearable tech, and digital fashion. Through immersive exhibitions, interactive installations, and hands-on workshops, we create a space where designers, engineers, and visitors collaborate at the edge of what clothing can become.
+            </p>
+
+            <h2>Hours & Admission</h2>
+            <table>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Monday - Tuesday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Wednesday - Friday</td>
+                    <td>10:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>10:00 AM - 8:00 PM</td>
+                </tr>
+            </table>
+
+            <h2>Milestones</h2>
+            <!-- Milestone images sourced from Pinterest -->
+            <div id="milestoneGallery">
+                <div id="milestoneTile">
+                    <img id="milestoneImg" src="../static/images/milestonePhotos/milestone1.png" alt="A futuristic building at dusk with a glowing entrance that looks like draped white fabric">
+                    <div id="milestoneInfo">
+                        <p id="milestoneYear">2020</p>
+                        <div id="milestoneLine"></div>
+                        <p id="milestoneText">MonoMuse opens in Pittsburgh with the inaugural exhibition "Second Skin," exploring wearable technology and smart textiles.</p>
+                        <div id="milestoneControls">
+                            <button onclick="prevMilestone()">Previous</button>
+                            <button onclick="nextMilestone()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Contact</h2>
+            <p>123 Liberty Avenue, Pittsburgh, PA 15222 &nbsp;|&nbsp; info@monomuse.org &nbsp;|&nbsp; (412) 555-0192</p>
+
+            <h2>Visit Us</h2>
+            <div id="map" style="height: 400px;"></div>
+        </main>
+
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+
+    </div>
+</body>
+</html>
